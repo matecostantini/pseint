@@ -1,0 +1,90 @@
+Algoritmo sin_titulo
+	Definir tamano Como Entero
+	tamano = 7
+	Dimension actividades[tamano]
+	
+	actividades[1] = tecnologia
+	actividades[2] = entrenamientos
+	actividades[3] = pensar
+	actividades[4] = arreglar
+	actividades[5] = tarea
+	actividades[6] = descansar
+	actividades[7] = cuentos
+	
+	Definir respuestaDelUsuario Como Caracter
+	Repetir
+		
+	Escribir "Estas son las actividades que Marcus tiene en su cabeza para hacer:"
+	Escribir "ingresa 1 para usar tecnologia"
+	Escribir "ingresa 2 para hacer entrenamientos"
+	Escribir "ingresa 3 para pensar..."
+	Escribir "ingresa 4 para arreglar..."
+	Escribir "ingresa 5 para hacer tareas de..."
+	Escribir "ingresa 6 para descansar en..."
+	Escribir "ingresa 7 para leer cuentos"
+	Escribir "ingresa 8 para salir"
+	Leer respuestaDelUsuario
+	si respuestaDelUsuario = "1" Entonces
+		Escribir "Las tecnologias mas recomendables:"
+		Escribir "  1.   ver tele"
+		Escribir "  2.   jugar videojuegos"
+		Escribir "  3.   programar"
+	SiNo
+		si respuestaDelUsuario = "2" Entonces
+			Escribir "Los entrenamientos mas efectivos son:"
+			Escribir "  1.  sentadillas"
+			Escribir "  2.  flexiones"
+			Escribir "  3.  plancha"
+		SiNo
+			si respuestaDelUsuario = "3" Entonces
+				Escribir "Los pensamientos mas utiles son:"
+			    Escribir "  1.  como hacer ventilador de carton"
+				Escribir "  2.  mini historia"
+				Escribir "  3.  la tarea pendentie"
+		    SiNo
+			   si respuestaDelUsuario = "4" Entonces
+				   Escribir "  1.  la cocina"
+				   Escribir "  2.  el wifi"
+				   Escribir "  3.  el reloj"
+		        SiNo
+					si respuestaDelUsuario = "5" Entonces
+						Escribir "  1.  ciencias sociales"
+						Escribir "  2.  matematica"
+						Escribir "  3.  ingles"
+					SiNo
+						si respuestaDelUsuario = "6" Entonces
+							Escribir "  1.  la cama"
+							Escribir "  2.  el sillon"
+							Escribir "  3.  la silla"
+						SiNo
+							si respuestaDelUsuario = "7" Entonces
+								Escribir "  1.  los juegos del hambre"
+								Escribir "  2.  percy jackson"
+								Escribir "  3.  harry potter"
+							SiNo
+								si respuestaDelUsuario = "8" Entonces
+									Escribir ""
+								SiNo
+									Limpiar Pantalla
+									Escribir "ayyy richi, vamos de nuevo y hacelo bien :("
+								FinSi
+							FinSi
+								
+						FinSi
+					FinSi
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+	si respuestaDelUsuario = "1, 2, 3, 4, 5, 6, 7" Entonces
+		Escribir "ingresa espacio para continuar"
+		Esperar Tecla
+		Limpiar Pantalla
+	FinSi
+    
+	Escribir "Gracias por ver las actividades de Marcus, por favor, vuelva pronto."
+Hasta Que respuestaDelUsuario = "8"
+
+FinProceso
+
+
